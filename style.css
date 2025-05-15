@@ -1,0 +1,50 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    color: #F7C2C2;
+}
+main{
+    display: flex;
+    width: 100vw;
+    height:100vh;
+}
+svg{
+    z-index: 1;
+}
+.logo{
+    width: 35vw;
+    position: relative;
+}
+.logo::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    background-color:lightpink;
+    opacity:0.6;
+}
+.form{
+    flex-grow: 1;
+}
+video{
+    width: 35vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    object-fit: cover;
+    z-index:-2;
+}
+section div{
+    overflow: hidden;
+  margin-top:30%;
+  background-color:#ff7474;
+  opacity: 0.3;
+  width: 35vw;
+  display:flex;
+  gap:5px;
+}
+
